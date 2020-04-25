@@ -1,0 +1,5 @@
+{% load i18n staticfiles sekizai_tags %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% addtoblock "js" %}<script src="https://maps.googleapis.com/maps/api/js?v=3&key={{ api_key }}&language={{ LANGUAGE_CODE }}"></script>{% endaddtoblock %}
+{% addtoblock "js" %}<script src="{% static 'djangocms_maps/js/googlemaps.js' %}"></script>{% endaddtoblock %}

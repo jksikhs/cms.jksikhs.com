@@ -32,6 +32,7 @@ INSTALLED_ADDONS = [
     'djangocms-text-ckeditor',
     'djangocms-video',
     'django-filer',
+    'djangocms-html-tags',
     'djangocms-maps',
     # </INSTALLED_ADDONS>
 ]

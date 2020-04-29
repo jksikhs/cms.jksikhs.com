@@ -1,6 +1,0 @@
-{
-    "installed-apps": [
-        "djangocms_html_tags"
-    ],
-    "package-name": "djangocms-html-tags"
-}

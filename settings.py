@@ -20,6 +20,7 @@ INSTALLED_ADDONS = [
     'aldryn-django',
     'aldryn-sso',
     'aldryn-django-cms',
+    'cmsplugin-gridloading',
     'djangocms-blog',
     'djangocms-bootstrap4',
     'djangocms-file',

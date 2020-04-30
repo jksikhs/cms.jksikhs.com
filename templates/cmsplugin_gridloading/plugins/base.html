@@ -1,0 +1,19 @@
+{% load cms_tags shuffle sekizai_tags staticfiles %}
+
+<ul id="gridloading-{{ instance.pk }}"
+    class="gridloading {{ instance.effect }} {{ instance.extra_styles }}"
+    >
+    {% with gridloading=instance %}
+    {% if instance.shuffle %}
+        {% for plugin in instance.child_plugin_instances|shuffle %}
+            {% render_plugin plugin %}
+        {% endfor %}
+    {% else %}
+        {% for plugin in instance.child_plugin_instances %}
+            {% render_plugin plugin %}
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+</ul>
+
+{% addtoblock "css" %}<link rel="stylesheet" href="{% static 'cmsplugin_gridloading/css/gridloading.min.css' %}">{% endaddtoblock %}

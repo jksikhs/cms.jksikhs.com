@@ -75,3 +75,6 @@ THUMBNAIL_PROCESSORS = (
 META_SITE_PROTOCOL = 'https'
 META_USE_SITES = True
 SECURE_SSL_REDIRECT=True
+
+TEXT_ADDITIONAL_TAGS = ('iframe',)
+TEXT_ADDITIONAL_ATTRIBUTES = ('scrolling', 'allowfullscreen', 'frameborder', 'src', 'height', 'width')

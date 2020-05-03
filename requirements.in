@@ -4,6 +4,7 @@ https://control.divio.com/api/v1/apps/serve/aldryn-django/2.2.12.1/c2d1c3a0-4978
 https://control.divio.com/api/v1/apps/serve/aldryn-sso/1.7.0/3ef75ae5-729a-4c44-ac3e-fa5950511e90/aldryn-sso-1.7.0.tar.gz#egg=aldryn-sso==1.7.0
 https://control.divio.com/api/v1/apps/serve/aldryn-django-cms/3.7.2.1/52771de3-1ec7-43dc-922b-e1aec12e62cd/aldryn-django-cms-3.7.2.1.tar.gz#egg=aldryn-django-cms==3.7.2.1
 https://control.divio.com/api/v1/apps/serve/aldryn-sitemap/0.0.2/1bfd498d-9d0d-4737-bb0f-25f713007d1e/aldryn-sitemap-0.0.2.tar.gz#egg=aldryn-sitemap==0.0.2
+https://control.divio.com/api/v1/apps/serve/cmsplugin-socialsharekit/0.0.4/ea14f8f1-19ee-4b87-97b3-b1488e9fd132/cmsplugin-socialsharekit-0.0.4.tar.gz#egg=cmsplugin-socialsharekit==0.0.4
 https://control.divio.com/api/v1/apps/serve/djangocms-blog/1.0.0/23ff49a5-18dd-42ba-9c01-05a59ab56eb1/djangocms-blog-1.0.0.tar.gz#egg=djangocms-blog==1.0.0
 https://control.divio.com/api/v1/apps/serve/djangocms-bootstrap4/1.6.0/66df98a5-f796-4465-a3b8-6eaf875b5f9c/djangocms-bootstrap4-1.6.0.tar.gz#egg=djangocms-bootstrap4==1.6.0
 https://control.divio.com/api/v1/apps/serve/djangocms-file/2.4.0/e815a2bc-5259-415f-a33a-42812c0393f8/djangocms-file-2.4.0.tar.gz#egg=djangocms-file==2.4.0

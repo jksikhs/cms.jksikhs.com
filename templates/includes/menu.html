@@ -7,7 +7,7 @@
             {% if child.children and dropdown %}
                 data-toggle="dropdown"
                 id="dropdown-{{ child.get_menu_title|slugify }}"
-                href="#"
+                href="{{ child.attr.redirect_url|default:child.get_absolute_url }}"
             {% else %}
                 href="{{ child.attr.redirect_url|default:child.get_absolute_url }}"
             {% endif %}

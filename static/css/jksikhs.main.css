@@ -1,0 +1,254 @@
+html{
+    font-size:16px
+}
+h1,h2,h3,h4{
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:600;
+    letter-spacing:2px
+}
+p{
+    font-family:"Tajawal",sans-serif;
+    font-size:1.1rem
+}
+.sub-header{
+    color:#FF3B45
+}
+
+/*
+nav{
+    background:#fff;
+    letter-spacing:1px;
+    transition:.5s;
+    padding-bottom:0rem
+}
+nav .navbar-brand{
+    color:#FF3B45;
+    text-transform:uppercase;
+    font-weight:700
+}
+nav .navbar-brand .tit{
+    font-size:18.8px;
+    border-bottom:1.4px solid #000
+}
+nav .navbar-brand .cons{
+    font-size:12px;
+    letter-spacing:3px;
+    padding-left:11px;
+    margin-bottom:0
+}
+.nav-link{
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#FF3B45;
+    font-weight:700
+}
+.nav-link:hover{
+    color:#000
+}
+.nav-link::after{
+    content:"";
+    display:block;
+    color:#000;
+    width:0;
+    border-bottom:2px solid #000;
+    transition:.5s;
+    margin:auto
+}
+.nav-link:hover::after{
+    width:100%
+}
+*/
+
+.activeNav{
+    padding:.5rem 3rem;
+    transition:.3s;
+    border-bottom:1px solid #FF3B45
+}
+.jumbotron{
+    height:100vh;
+    background-image:url("../images/layout/banner1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+    background-attachment:fixed;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:top
+}
+.jumbotron div{
+    background:rgba(0,0,0,0.7);
+    width:70%;
+    padding:3rem 3rem;
+    color:#fff;
+    letter-spacing:3px
+}
+.jumbotron div h1{
+    font-weight:900;
+    font-size:60px;
+    border-bottom:1px solid #fff;
+    width:468px;
+    padding-bottom:.5rem;
+    color:#000
+}
+.jumbotron div p{
+    padding-top:.5rem
+}
+#services{
+    height:100%;
+    padding:5.5rem 0 10rem 0
+}
+#services h2,#services h4{
+    padding-bottom:4rem
+}
+#services h4{
+    padding:2rem 0
+}
+#services .fa-stack-2x{
+    color:#FF3B45
+}
+#about{
+    height:60%;
+    width:60%;
+    text-align:center;
+    padding:8rem 0;
+    margin-top:5rem;
+    background:linear-gradient(145deg, #FF3B45, 80%, #000 30%);
+    color:#fff
+}
+#about p:first-of-type{
+    padding-top:2rem
+}
+#approach{
+    height:50%;
+    background:#FDEDEB
+}
+#approach .txt{
+    padding:5rem 2rem 5rem 5rem
+}
+#approach .txt p:first-of-type{
+    padding-top:1.2rem
+}
+#approach .img img{
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat
+}
+footer{
+    height:40%;
+    background:#FDEDEB;
+    padding:3rem
+}
+footer p{
+    font-size:.9rem
+}
+footer .fa-stack-2x{
+    color:#FF3B45
+}
+#contact p{
+    padding:2rem 0 1rem 0
+}
+#contact h3,#contact .fa-stack-2x{
+    color:#FF3B45
+}
+#contact{
+    padding:10rem 0;
+    background:#F8F9FA
+}
+#contact .row{
+    padding-top:5rem
+}
+@media(min-width:767px){
+    #portfolio .portfolio-item{
+        margin:0 0 30px
+    }
+    .portfolio-modal{
+        padding-right:0px !important
+    }
+    .portfolio-modal .modal-dialog{
+        margin:1rem;
+        max-width:100vw
+    }
+    .modal-content{
+        padding:100px 0;
+        text-align:center
+    }
+    .modal-content h2{
+        font-size:3em;
+        margin-bottom:15px
+    }
+    .modal-content p{
+        margin-bottom:30px
+    }
+    .modal-content p.item-intro{
+        font-size:16px;
+        font-style:italic;
+        margin:20px 0 30px
+    }
+    .modal-content ul.list-inline{
+        margin-top:0;
+        margin-bottom:30px
+    }
+    .modal-content img{
+        margin-bottom:30px
+    }
+    .modal-content button{
+        cursor:pointer
+    }
+    .close-modal{
+        position:absolute;
+        top:25px;
+        right:25px;
+        width:75px;
+        height:75px;
+        cursor:pointer;
+        background-color:transparent
+    }
+    .close-modal:hover{
+        opacity:.3
+    }
+    .close-modal .lr{
+        z-index:1051;
+        width:1px;
+        height:75px;
+        margin-left:35px;
+        -webkit-transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+        transform:rotate(45deg);
+        background-color:#FF3B45
+    }
+    .close-modal .lr .rl{
+        z-index:1052;
+        width:1px;
+        height:75px;
+        -webkit-transform:rotate(90deg);
+        -ms-transform:rotate(90deg);
+        transform:rotate(90deg);
+        background-color:#FF3B45
+    }
+}
+@media only screen and (max-width: 500px){
+    .activeNav{
+        padding:.5rem 1.2rem
+    }
+    .jumbotron div{
+        width:96%;
+        padding:3rem 3rem
+    }
+    .jumbotron div h1{
+        width:350px;
+        padding-bottom:.5rem;
+        font-size:50px
+    }
+    #about{
+        width:93%
+    }
+    #clients .client-img .col-sm-3{
+        max-width:30%
+    }
+    #clients .client-img .col-sm-3 img{
+        padding-bottom:2rem
+    }
+}
+/*# sourceMappingURL=style.css.map */

@@ -23,8 +23,7 @@
     {{ ALDRYN_SNAKE.render_head }}
   </head>
   <body>
-
-
+    {% cms_toolbar %}
     <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
         <a class="navbar-brand" href="https://jksikhs.com">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +38,7 @@
             </ul>
         </div>
     </nav>
-    {% cms_toolbar %}
+
     <div class="container py-3">
         {% block content %}
             <p>Hello world! This is the Bootstrap 4 Boilerplate.</p>

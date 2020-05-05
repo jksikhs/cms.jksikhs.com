@@ -2,63 +2,18 @@ html{
     font-size:16px
 }
 h1,h2,h3,h4{
-    text-transform:uppercase;
     letter-spacing:1px;
     font-weight:600;
     letter-spacing:2px
 }
 p{
     font-family:"Tajawal",sans-serif;
-    font-size:1.1rem
+    font-size:0.9rem
 }
 .sub-header{
     color:#FF3B45
 }
 
-/*
-nav{
-    background:#fff;
-    letter-spacing:1px;
-    transition:.5s;
-    padding-bottom:0rem
-}
-nav .navbar-brand{
-    color:#FF3B45;
-    text-transform:uppercase;
-    font-weight:700
-}
-nav .navbar-brand .tit{
-    font-size:18.8px;
-    border-bottom:1.4px solid #000
-}
-nav .navbar-brand .cons{
-    font-size:12px;
-    letter-spacing:3px;
-    padding-left:11px;
-    margin-bottom:0
-}
-.nav-link{
-    text-transform:uppercase;
-    text-decoration:none;
-    color:#FF3B45;
-    font-weight:700
-}
-.nav-link:hover{
-    color:#000
-}
-.nav-link::after{
-    content:"";
-    display:block;
-    color:#000;
-    width:0;
-    border-bottom:2px solid #000;
-    transition:.5s;
-    margin:auto
-}
-.nav-link:hover::after{
-    width:100%
-}
-*/
 
 .activeNav{
     padding:.5rem 3rem;
@@ -66,14 +21,14 @@ nav .navbar-brand .cons{
     border-bottom:1px solid #FF3B45
 }
 .jumbotron{
-    height:100vh;
+    height:70vh;
     background-image:url("../images/layout/banner1.jpg");
+    background-size: 100% auto;
     background-repeat:no-repeat;
-    background-size:cover;
     background-position:top;
     background-attachment:fixed;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content:center;
     align-items:top
 }
@@ -92,22 +47,7 @@ nav .navbar-brand .cons{
     padding-bottom:.5rem;
     color:#000
 }
-.jumbotron div p{
-    padding-top:.5rem
-}
-#services{
-    height:100%;
-    padding:5.5rem 0 10rem 0
-}
-#services h2,#services h4{
-    padding-bottom:4rem
-}
-#services h4{
-    padding:2rem 0
-}
-#services .fa-stack-2x{
-    color:#FF3B45
-}
+
 #about{
     height:60%;
     width:60%;
@@ -136,9 +76,8 @@ nav .navbar-brand .cons{
     background-repeat:no-repeat
 }
 footer{
-    height:40%;
-    background:#FDEDEB;
-    padding:3rem
+    height:5%;
+    padding:1rem
 }
 footer p{
     font-size:.9rem

@@ -1,14 +1,14 @@
-{% load static i18n cms_tags menu_tags sekizai_tags %}
+﻿{% load static i18n cms_tags menu_tags sekizai_tags %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
-  <head>
+<head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84317288-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-84317288-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-84317288-1');
     </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,14 +18,17 @@
 
     <!-- Bootstrap -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/jksikhs.main.css' %}" rel="stylesheet">
 
     {% render_block "css" %}
     {{ ALDRYN_SNAKE.render_head }}
-  </head>
+</head>
   <body>
     {% cms_toolbar %}
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <a class="navbar-brand" href="https://jksikhs.com">Home</a>
+        <a class="navbar-brand" href="https://jksikhs.com">
+          <img src="{% static 'images/logos/logo1.png' %}" width="120" height="45" class="d-inline-block align-top" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,7 +42,8 @@
         </div>
     </nav>
 
-    <div class="container py-3">
+    <!--div class="container py-3" -->
+    <div>
         {% block content %}
             <p>Hello world! This is the Bootstrap 4 Boilerplate.</p>
         {% endblock %}

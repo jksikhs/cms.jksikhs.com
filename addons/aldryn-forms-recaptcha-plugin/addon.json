@@ -1,0 +1,6 @@
+{
+    "installed-apps": [
+        "aldryn_forms_recaptcha_plugin"
+    ],
+    "package-name": "aldryn-forms-recaptcha-plugin"
+}

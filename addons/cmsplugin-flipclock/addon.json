@@ -1,7 +1,0 @@
-{
-    "installed-apps": [
-        "timezone_field",
-        "cmsplugin_flipclock"
-    ],
-    "package-name": "cmsplugin-flipclock"
-}

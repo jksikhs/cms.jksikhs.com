@@ -22,7 +22,6 @@ INSTALLED_ADDONS = [
     'aldryn-django-cms',
     'aldryn-forms',
     'aldryn-sitemap',
-    'cmsplugin-flipclock',
     'djangocms-blog',
     'djangocms-bootstrap4',
     'djangocms-file',

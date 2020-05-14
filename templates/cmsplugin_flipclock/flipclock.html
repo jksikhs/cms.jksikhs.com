@@ -1,0 +1,40 @@
+{% load sekizai_tags staticfiles flipclock_tags tz %}
+
+<div class="flip-clock flip-counter-{{ instance.pk }}"></div>
+{% addtoblock "css" %}<link rel="stylesheet" href="{% static 'cmsplugin_flipclock/css/flipclock.css' %}">{% endaddtoblock %}
+{% addtoblock "js" %}<script src="{% static 'cmsplugin_flipclock/js/flipclock.min.js' %}"></script>{% endaddtoblock %}
+{% addtoblock "js" %}
+<script>
+    {% with timezone_set=instance.timezone %}
+    var flipclock_{{ instance.pk }}
+    (function($) {
+        $(function() {
+            function pad(number, length){
+                var str = "" + number
+                while (str.length < length) {
+                    str = '0'+str;
+                }
+                return str;
+            }
+
+            {% ifequal instance.clock_face 'Counter' %}
+                var countdown = {{ instance.numbers }};
+            {% else %}
+                var countdown = ((new Date('{{ instance.date|timezone:timezone_set|date:"c" }}').getTime())/1000) - ((new Date().getTime())/1000);
+                countdown = Math.max(1, countdown);
+            {% endifequal %}
+            var flipclock_options = {
+                clockFace: '{{ instance.clock_face }}',
+                autoStart: {{ instance.auto_start|toJSON }},
+                countdown: {{ instance.countdown|toJSON }},
+                defaultLanguage: 'english',
+                language: '{{ LANGUAGE_CODE }}',
+                {% ifnotequal instance.clock_face 'Counter' %}showSeconds: {{ instance.show_seconds|toJSON }}{% endifnotequal %}
+            }
+            flipclock_{{ instance.pk }} = $('.flip-counter-{{ instance.pk }}').FlipClock(countdown, flipclock_options);
+
+        });
+    }(jQuery));
+    {% endwith %}
+</script>
+{% endaddtoblock %}

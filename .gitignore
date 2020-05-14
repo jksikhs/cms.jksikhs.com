@@ -25,3 +25,6 @@ package-lock.json
 
 local.sqlite
 testpage.html
+data
+data.tar.gz
+.aldryn

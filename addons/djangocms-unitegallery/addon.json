@@ -1,0 +1,7 @@
+{
+    "installed-apps": [
+        "sorl.thumbnail",
+        "djangocms_unitegallery"
+    ],
+    "package-name": "djangocms-unitegallery"
+}

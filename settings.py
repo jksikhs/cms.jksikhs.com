@@ -33,6 +33,7 @@ INSTALLED_ADDONS = [
     'djangocms-style',
     'djangocms-text-ckeditor',
     'djangocms-transfer',
+    'djangocms-unitegallery',
     'djangocms-video',
     'django-filer',
     'djangocms-maps',

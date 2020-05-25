@@ -1,0 +1,9 @@
+<nav class="local_navigation">
+  <ul>
+    {% for name, link in local_menu_items %}
+      <li class="local_navigation__item">
+        <a href="{{ link }}">{{ name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -22,6 +22,7 @@ INSTALLED_ADDONS = [
     'aldryn-django-cms',
     'aldryn-forms',
     'aldryn-sitemap',
+    'cmsplugin-socialsharekit',
     'djangocms-blog',
     'djangocms-bootstrap4',
     'djangocms-file',

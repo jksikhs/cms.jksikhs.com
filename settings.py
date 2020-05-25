@@ -35,7 +35,6 @@ INSTALLED_ADDONS = [
     'djangocms-transfer',
     'djangocms-video',
     'django-filer',
-    'djangocms-local-navigation',
     'djangocms-maps',
     # </INSTALLED_ADDONS>
 ]

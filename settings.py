@@ -21,6 +21,7 @@ INSTALLED_ADDONS = [
     'aldryn-sso',
     'aldryn-django-cms',
     'aldryn-forms',
+    'aldryn-haystack',
     'aldryn-sitemap',
     'djangocms-blog',
     'djangocms-bootstrap4',

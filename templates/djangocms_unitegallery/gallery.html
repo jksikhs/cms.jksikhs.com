@@ -1,0 +1,25 @@
+{% load static cms_tags sekizai_tags thumbnail %}
+<div id="gallery_{{ gallery.pk }}" style="display:none;" class="unitegallery{% if gallery.custom_classes %} {{ gallery.custom_classes }}{% endif %}">
+{% for photo in gallery.photos.all %}
+  {% if CONFIG.THUMBNAIL_ENABLED %}
+    {% thumbnail photo.image photo.get_thumbnail_size crop="center" as im %}{% include "djangocms_unitegallery/_photo.html" %}{% endthumbnail %}
+  {% else %}
+    {% with photo.image as im %}{% include "djangocms_unitegallery/_photo.html" %}{% endwith %}
+  {% endif %}
+{% endfor %}
+</div>
+{% static "djangocms_unitegallery" as baseurl %}
+{% addtoblock "css" %}
+<link rel="stylesheet" href="{{ baseurl }}/unitegallery/css/unite-gallery.css" type="text/css" />
+{% endaddtoblock %}
+{% addtoblock "js" %}
+<script type="text/javascript" src="{{ baseurl }}/unitegallery/js/unitegallery.min.js"></script>
+<script type="text/javascript" src="{{ baseurl }}/unitegallery/themes/{{ gallery.theme }}/ug-theme-{{ gallery.theme }}.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var options = {};
+        {% if gallery.options %}jQuery.extend(options, {{ gallery.options|safe }});{% endif %}
+        $("#gallery_{{ gallery.pk }}").unitegallery(options);
+    });
+</script>
+{% endaddtoblock %}

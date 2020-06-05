@@ -27,4 +27,5 @@ local.sqlite
 testpage.html
 data
 data.tar.gz
+database.dump
 .aldryn

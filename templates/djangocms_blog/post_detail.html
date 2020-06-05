@@ -5,6 +5,11 @@
 {% block title %}{{ post.get_title }}{% endblock %}
 
 {% block content_blog %}{% spaceless %}
+
+<!-- social shares shariff
+https://djangocms-blog.readthedocs.io/en/latest/features/shares.html
+<social shares shariff ends -->
+
 <article id="post-{{ post.slug }}" class="post-item post-detail">
     <header>
         <h2>{% render_model post "title" %}</h2>

@@ -14,11 +14,14 @@
           gtag('js', new Date());
           gtag('config', 'UA-165272044-2');
     </script>
+    <script src="{% static 'js/jksikhs.js' %}"></script>
     <title>{% block title %}{% page_attribute page_title %} - {{ request.site.name }}{% endblock title %}</title>
 
     <!-- Bootstrap -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/jksikhs.main.css' %}" rel="stylesheet">
+    <!-- w3 -->
+    <link href="{% static 'css/w3.jksikhs.css' %}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.floating-social-share.min.css' %}" />
     {% render_block "css" %}
     {{ ALDRYN_SNAKE.render_head }}
@@ -41,14 +44,16 @@
             </ul>
         </div>
     </nav>
+    <div class="w3-content" style="max-width:1500px">
 
-    <div class="container py-3">
 
-        {% block content %}
-            <p>Hello world! This is the Bootstrap 4 Boilerplate.</p>
-        {% endblock %}
+      <div class="container py-3">
+
+          {% block content %}
+              <p>Hello world! This is the Bootstrap 4 Boilerplate.</p>
+          {% endblock %}
+      </div>
     </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -64,10 +69,15 @@
         url: "https://elibrary.jksikhs.com/{% page_url request.current_page %}"
       });
     </script>
+
     {% render_block "js" %}
     {{ ALDRYN_SNAKE.render_tail }}
     <footer>
              <p class="text-muted"> 2020 Website by JK Sikhs team </p>
     </footer>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script>
+       AOS.init({ duration: 1000 })
+    </script>
   </body>
 </html>

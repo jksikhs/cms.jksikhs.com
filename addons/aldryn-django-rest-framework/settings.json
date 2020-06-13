@@ -1,0 +1,4 @@
+{
+    "enable_rest_framework": true,
+    "permissions_policy": "AllowAny"
+}

@@ -1,5 +1,8 @@
 html{
-    font-size:16px
+    font-size:18px
+}
+body {
+  background-color: #FFCC99;
 }
 h1,h2,h3,h4{
     letter-spacing:1px;
@@ -21,7 +24,7 @@ p{
     border-bottom:1px solid #FF3B45
 }
 .jumbotron{
-    height:70vh;
+    height:60vh;
     background-image:url("../images/layout/banner1.jpg");
     background-size: auto auto;
     background-repeat:no-repeat;
@@ -171,12 +174,12 @@ footer .fa-stack-2x{
         background-size: 100% auto;
         background-repeat:no-repeat;
         background-position:top;
-        background-attachment:fixed;
+        --background-attachment:fixed;
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
         justify-content:center;
         align-items:center;
-        padding-bottom:1rem
+
     }
     .jumbotron div{
         padding: 5em inherit;
@@ -186,7 +189,7 @@ footer .fa-stack-2x{
     .jumbotron div h1{
         width:350px;
         padding-bottom:.5rem;
-        font-size:50px
+        font-size:20px
     }
     #about{
         width:93%

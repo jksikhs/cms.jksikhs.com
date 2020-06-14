@@ -1,6 +1,6 @@
 {
     "cms_content_cache_duration": 60,
     "cms_menus_cache_duration": 3600,
-    "cms_templates": "[[\"default.html\", \"Default\"],[\"jks_fullWidth.html\", \"Jks Fullwidth\"]]",
+    "cms_templates": "[[\"default.html\", \"Default\"], [\"jks_fullWidth.html\", \"Jks Fullwidth\"]]",
     "permissions_enabled": true
 }

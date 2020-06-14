@@ -16,7 +16,11 @@
     background: #f3a712;
 }
 
+.header .nav li.active a,
+.header .nav li:hover a{
+	color:#f3a712;
+}
+
 .header .nav li .sub-menu li:hover a{
-	color:#fff;
 	background:#f3a712;
 }

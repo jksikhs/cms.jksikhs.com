@@ -6,3 +6,17 @@
 .header .img-logo {
     margin-top: 2px;
 }
+
+
+.header .nav li {
+    margin-right: 10px;
+}
+
+.header .nav li a::before {
+    background: #f3a712;
+}
+
+.header .nav li .sub-menu li:hover a{
+	color:#fff;
+	background:#f3a712;
+}

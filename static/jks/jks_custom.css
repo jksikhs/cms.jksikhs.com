@@ -59,6 +59,11 @@
     }
 }
 
+.breadcrumbs {
+  padding: 15px;
+  background-color: #2f2751;
+}
+
 .section-space {
   padding: 30px;
 }

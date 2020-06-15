@@ -86,7 +86,8 @@ TEXT_ADDITIONAL_ATTRIBUTES = ('scrolling', 'allowfullscreen', 'frameborder', 'sr
 CMS_TEMPLATES = (
     ## Customize this
     ('default.html', 'Default'),
-    ('jks_fullwidth.html', 'JKSFullwidth')
+    ('jks_fullwidth.html', 'JKSFullwidth'),
+    ('jks_two_column.html', 'JKS Two Column'),
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'

@@ -15,9 +15,9 @@
             {{ child.get_menu_title }}
         </a>
         {% if child.children and dropdown %}
-            <div class="sub-menu" aria-labelledby="dropdown-{{ child.get_menu_title|slugify }}">
+            <ul class="sub-menu" aria-labelledby="dropdown-{{ child.get_menu_title|slugify }}">
                 {% show_menu from_level to_level extra_inactive extra_active "jks/includes/dropdown.html" "" "" child %}
-            </div>
+            </ul>
         {% endif %}
     </li>
 {% endfor %}

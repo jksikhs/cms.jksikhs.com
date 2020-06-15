@@ -8,7 +8,7 @@
 }
 
 .header .nav li {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .header .nav li a::before {
@@ -26,4 +26,27 @@
 
 .breadcrumbs {
     padding: 20px;
+}
+
+@media screen and (max-width: 991px) {
+     /* start of large tablet styles */
+     .img-responsive {
+       min-width: 80%;
+     }
+}
+
+@media screen and (max-width: 767px) {
+     /* start of medium tablet styles */
+     /* Adding a fixed/percentage min-width could ensure that the image doesn't get too small */
+     .img-responsive {
+       min-width: 50%;
+     }
+}
+
+@media screen and (max-width: 479px) {
+     /* start of phone styles */
+     /* It's possible to hide the image if the screen becomes too small */
+     .img-responsive {
+       min-width: 30%;
+     }
 }

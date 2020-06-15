@@ -24,14 +24,14 @@
 	background:#f3a712;
 }
 
-.breadcrumbs {
-    padding: 20px;
-}
-
 @media screen and (max-width: 991px) {
      /* start of large tablet styles */
     .img-responsive {
        max-width: 80%;
+    }
+    .breadcrumbs {
+      padding: 15px;
+      background-color: #2f2751;
     }
 }
 
@@ -41,6 +41,10 @@
      .img-responsive {
        max-width: 50%;
      }
+     .breadcrumbs {
+      padding: 15px;
+      background-color: #2f2751;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -49,4 +53,8 @@
     .img-responsive {
        max-width: 30%;
      }
+     .breadcrumbs {
+      padding: 15px;
+      background-color: #2f2751;
+    }
 }

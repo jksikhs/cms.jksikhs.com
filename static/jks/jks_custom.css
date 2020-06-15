@@ -1,6 +1,6 @@
 /* author: Gurjeet Singh. */
 .header .nav-inner {
-    margin-right: 10px!important    ;
+    margin-right: 10px!important ;
 }
 
 .header .img-logo {
@@ -30,14 +30,20 @@
 
 @media screen and (max-width: 991px) {
      /* start of large tablet styles */
-     .img-responsive {
+    .header .img-logo, .header.style2 .img-logo {
+      min-width: 80%!important ;
+    }
+    .img-responsive {
        min-width: 80%;
-     }
+    }
 }
 
 @media screen and (max-width: 767px) {
      /* start of medium tablet styles */
      /* Adding a fixed/percentage min-width could ensure that the image doesn't get too small */
+     .header .img-logo, .header.style2 .img-logo {
+      min-width: 50%!important ;
+    }
      .img-responsive {
        min-width: 50%;
      }
@@ -46,6 +52,9 @@
 @media screen and (max-width: 479px) {
      /* start of phone styles */
      /* It's possible to hide the image if the screen becomes too small */
+    .header .img-logo, .header.style2 .img-logo {
+      min-width: 30%!important ;
+      }
      .img-responsive {
        min-width: 30%;
      }

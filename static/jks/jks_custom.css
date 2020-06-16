@@ -5,6 +5,7 @@
 
 .header .img-logo {
     margin-top: 0px!important;
+    max-width: 80%!important;
 }
 
 .header .nav li {
@@ -62,7 +63,11 @@
 .breadcrumbs {
   padding: 15px;
   background-color: #2f2751;
+  color: #ffffff;
 }
+.breadcrumbs h3{
+    color: #ffffff;
+  }
 
 .section-space {
   padding: 30px;

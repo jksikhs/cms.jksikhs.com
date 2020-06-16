@@ -4,7 +4,7 @@
 }
 
 .header .img-logo {
-    margin-top: 0px;
+    margin-top: 0px!important;
 }
 
 .header .nav li {
@@ -27,7 +27,7 @@
 @media screen and (max-width: 991px) {
      /* start of large tablet styles */
     .img-responsive {
-       max-width: 80%;
+       max-width: 80%!important;
     }
     .breadcrumbs {
       padding: 15px;
@@ -39,7 +39,7 @@
      /* start of medium tablet styles */
      /* Adding a fixed/percentage max-width could ensure that the image doesn't get too small */
      .img-responsive {
-       max-width: 50%;
+       max-width: 50%!important;
      }
      .breadcrumbs {
       padding: 15px;
@@ -51,7 +51,7 @@
      /* start of phone styles */
      /* It's possible to hide the image if the screen becomes too small */
     .img-responsive {
-       max-width: 30%;
+       max-width: 30%!important;
      }
      .breadcrumbs {
       padding: 15px;

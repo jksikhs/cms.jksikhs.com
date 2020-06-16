@@ -88,6 +88,7 @@ CMS_TEMPLATES = (
     ('default.html', 'Default'),
     ('jks_fullwidth.html', 'JKSFullwidth'),
     ('jks_two_column.html', 'JKS Two Column'),
+    ('jks_featured.html', 'JKS featured'),
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'

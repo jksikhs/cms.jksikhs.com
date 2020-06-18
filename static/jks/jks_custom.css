@@ -77,7 +77,7 @@
      }
      /* It's possible to hide the image if the screen becomes too small */
     .img-responsive {
-       max-width: 30%!important;
+       max-width: 15%!important;
      }
      .breadcrumbs {
       padding: 15px;

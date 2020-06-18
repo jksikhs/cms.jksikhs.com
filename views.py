@@ -8,7 +8,7 @@ def home(request):
     try:
         for item in coviddata['statewise']:  # for name, age in dictionary.iteritems():  (for Python 2.x)
             if item['statecode'] == 'JK':
-                return render(request, 'default.html', {
+                return render(request, 'jks_fullwidth.html', {
                     'confirmed': item['confirmed'],
                     'deltaconfirmed': item['deltaconfirmed'],
                     'deaths': item['deaths'],

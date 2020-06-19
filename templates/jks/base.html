@@ -14,10 +14,7 @@
             gtag('js', new Date());
             gtag('config', 'UA-165272044-2');
         </script>
-        <!-- Jquery JS -->
-        <script src="{% static 'jks/js/jquery.min.js' %}"></script>
-        <script src="{% static 'jks/js/jquery-migrate-3.0.0.js' %}"></script>
-
+        
 		<!-- Title Tag  -->
 		<title>{% block title %}{% page_attribute "page_title" %}{% endblock title %}</title>
 
@@ -58,13 +55,12 @@
 			<script src="{% static 'jks/https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-    <!-- w3 -->
-    <link href="{% static 'css/w3.jksikhs.css' %}" rel="stylesheet">
+   		<!-- w3 -->
+    	<link href="{% static 'css/w3.jksikhs.css' %}" rel="stylesheet">
 
-    <!-- social shares -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.floating-social-share.min.css' %}" />
-
-
+    	<!-- social shares -->
+    	<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.floating-social-share.min.css' %}" />
+		
 	</head>
 	<body id="bg">
         {% cms_toolbar %}
@@ -135,7 +131,15 @@
             {% block header %}{% endblock header %}
             {% block content %}{% endblock content %}
         </div>
-        <!-- social media share -->
+        
+        <!-- Footer -->
+        {% static_placeholder "footer" or %} @Copyright - JK Sikhs Team{% endstatic_placeholder %}
+		
+		<!-- Jquery JS -->
+        <script src="{% static 'jks/js/jquery.min.js' %}"></script>
+        <script src="{% static 'jks/js/jquery-migrate-3.0.0.js' %}"></script>
+
+		<!-- social media share -->
         <script type="text/javascript" src="{% static 'js/jquery.floating-social-share.min.js' %}"></script>
         <script>
           $("body").floatingSocialShare({
@@ -147,10 +151,6 @@
           });
         </script>
 
-
-        <!-- Footer -->
-        {% static_placeholder "footer" or %} @Copyright - JK Sikhs Team{% endstatic_placeholder %}
-        <br><br> 
 
 		<!-- Popper JS -->
 		<script src="{% static 'jks/js/popper.min.js' %}"></script>
@@ -174,10 +174,10 @@
 		<script src="{% static 'jks/js/easing.js' %}"></script>
 		<!-- Magnipic Popup JS -->
 		<script src="{% static 'jks/js/magnific-popup.min.js' %}"></script>
-    <!-- Counterup JS -->
-    <script src="{% static 'jks/js/jquery.counterup.min.js' %}"></script>
+    	<!-- Counterup JS -->
+    	<script src="{% static 'jks/js/jquery.counterup.min.js' %}"></script>
 		<!-- Active JS -->
-    <script src="{% static 'jks/js/active.js' %}"></script>
+    	<script src="{% static 'jks/js/active.js' %}"></script>
 
         {% render_block "js" %}
 	</body>

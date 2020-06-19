@@ -19,27 +19,17 @@
     </div>
 {% endblock header %}
 
-{% block content %}    
-    <section class="section-space">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
-                    {% placeholder "primary" or %}
-                    {% endplaceholder %}                 
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-space">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
-                    {% placeholder "Secondary" or %}
-                    {% endplaceholder %}                 
-                </div>
-            </div>
-        </div>
-    </section>
+{% block content %}
+  <div>
+    {% placeholder "primary" or %}
+        <p>This page has no content yet. Make sure you are in <em>Edit</em> mode
+        (hit the <strong>Edit page</strong> button if required). Then switch to
+        <em>Structure</em> mode.</p>
+    {% endplaceholder %}
+  </div>
+  <div>
+    {% placeholder "secondary" or %}{% endplaceholder %}
+  </div>
 {% endblock content %}
 
 {% static_placeholder "footer" %}

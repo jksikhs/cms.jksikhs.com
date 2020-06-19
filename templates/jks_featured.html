@@ -21,14 +21,17 @@
 
 {% block content %}
   <div>
-    {% placeholder "primary" or %}
-        <p>This page has no content yet. Make sure you are in <em>Edit</em> mode
-        (hit the <strong>Edit page</strong> button if required). Then switch to
-        <em>Structure</em> mode.</p>
-    {% endplaceholder %}
+    {% placeholder "primary" or %}{% endplaceholder %}
   </div>
   <div>
     {% placeholder "secondary" or %}{% endplaceholder %}
+  </div>
+  <div>
+    {% placeholder "content" or %}
+        <p>This page has no content yet. Make sure you are in <em>Edit</em> mode
+       (hit the <strong>Edit page</strong> button if required). Then switch to
+       <em>Structure</em> mode.</p>
+    {% endplaceholder %}
   </div>
 {% endblock content %}
 

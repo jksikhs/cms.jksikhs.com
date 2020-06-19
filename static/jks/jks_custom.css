@@ -110,3 +110,12 @@
 .section-space {
   padding: 30px;
 }
+
+
+.blog-editor-section ul li {
+  margin-left: 5px;
+}
+
+.blog-editor-section a {
+  color: #f3a712
+}

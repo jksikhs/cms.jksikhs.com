@@ -1,0 +1,34 @@
+{% extends "jks/base.html" %}
+{% load cms_tags %}
+
+{% block header %}
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bread-inner">
+                        <div class="bread-title">
+                            {% placeholder "Header" or %}
+                                <h3>{% page_attribute "page_title" %}</h3>
+                            {% endplaceholder %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock header %}
+
+{% block content %}
+  <div>
+    {% placeholder "primary" or %}{% endplaceholder %}
+  </div>
+  <div>
+    {% placeholder "secondary" or %}{% endplaceholder %}
+  </div>
+  <div>
+    {% placeholder "content" or %}{% endplaceholder %}
+  </div>
+{% endblock content %}
+
+{% static_placeholder "footer" %}

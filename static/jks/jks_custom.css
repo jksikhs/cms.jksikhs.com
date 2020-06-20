@@ -1,0 +1,121 @@
+/* author: Gurjeet Singh. */
+
+.jumbotron{
+    height:60vh;
+    background-image:url("../images/layout/banner1.jpg");
+    background-size: auto auto;
+    background-repeat:no-repeat;
+    background-position:top;
+    background-attachment:fixed;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:1rem
+}
+.jumbotron div{
+    background:rgba(0,0,0,0.7);
+    width:70%;
+    padding:3rem 3rem;
+    color:#fff;
+    letter-spacing:3px
+}
+
+.header .nav-inner {
+    margin-right: 10px!important ;
+}
+
+.header .img-logo {
+    margin-top: 0px!important;
+    max-width: 80%!important;
+}
+
+.header .nav li {
+    margin-right: 15px;
+}
+
+.header .nav li a::before {
+    background: #f3a712;
+}
+
+.header .nav li.active a,
+.header .nav li:hover a{
+	color:#f3a712;
+}
+
+.header .nav li .sub-menu li:hover a{
+	background:#f3a712;
+}
+
+@media screen and (max-width: 991px) {
+     /* start of large tablet styles */
+    .img-responsive {
+       max-width: 80%!important;
+    }
+    .breadcrumbs {
+      padding: 15px;
+      background-color: #2f2751;
+    }
+}
+
+@media screen and (max-width: 767px) {
+     /* start of medium tablet styles */
+     /* Adding a fixed/percentage max-width could ensure that the image doesn't get too small */
+     .img-responsive {
+       max-width: 50%!important;
+     }
+     .breadcrumbs {
+      padding: 15px;
+      background-color: #2f2751;
+    }
+}
+
+@media screen and (max-width: 479px) {
+     /* start of phone styles */
+     .main-container {
+       /*margin-top:45px; */
+     }
+     /* It's possible to hide the image if the screen becomes too small */
+    .img-responsive {
+       max-width: 15%!important;
+     }
+     .breadcrumbs {
+      padding: 15px;
+      background-color: #2f2751;
+    }
+    .jumbotron{
+        height:35vh;
+        background-image:url("../images/layout/banner1_mob.jpg");
+        background-size: auto auto;
+        background-repeat:no-repeat;
+        background-position:top;
+        background-attachment:fixed;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+    }
+}
+
+.breadcrumbs {
+  padding: 15px;
+  background-color: #2f2751;
+  color: #ffffff;
+}
+.breadcrumbs h3{
+    color: #ffffff;
+  }
+
+.section-space {
+  padding: 30px;
+}
+
+
+.blog-editor-section ul li {
+  margin-left: 5px;
+}
+
+.blog-editor-section a {
+  color: #f3a712
+}

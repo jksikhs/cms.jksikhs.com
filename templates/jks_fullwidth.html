@@ -1,0 +1,17 @@
+{% extends "jks/base.html" %}
+{% load cms_tags %}
+
+{% block content %}
+  <div>
+    {% placeholder "primary" or %}{% endplaceholder %}
+  </div>
+  <div>
+    {% placeholder "secondary" or %}{% endplaceholder %}
+  </div>
+  <div>
+    {% placeholder "content" or %}{% endplaceholder %}
+  </div>
+{% endblock content %}
+
+{% static_placeholder "footer" %}
+

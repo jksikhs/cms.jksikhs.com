@@ -82,3 +82,17 @@ SECURE_SSL_REDIRECT=True
 
 TEXT_ADDITIONAL_TAGS = ('iframe',)
 TEXT_ADDITIONAL_ATTRIBUTES = ('scrolling', 'allowfullscreen', 'frameborder', 'src', 'height', 'width')
+
+CMS_TEMPLATES = (
+    ## Customize this
+    ('default.html', 'Default'),
+    ('jks_fullwidth.html', 'JKSFullwidth'),
+    ('jks_two_column.html', 'JKS Two Column'),
+    ('jks_featured.html', 'JKS featured'),
+)
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+CMS_PERMISSION = True
+
+CMS_PLACEHOLDER_CONF = {}

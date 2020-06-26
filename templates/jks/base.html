@@ -14,7 +14,7 @@
             gtag('js', new Date());
             gtag('config', 'UA-165272044-2');
         </script>
-        
+
 		<!-- Title Tag  -->
 		<title>{% block title %}{% page_attribute "page_title" %}{% endblock title %}</title>
 
@@ -60,7 +60,7 @@
 
     	<!-- social shares -->
     	<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.floating-social-share.min.css' %}" />
-		
+
 	</head>
 	<body id="bg">
         {% cms_toolbar %}
@@ -120,7 +120,7 @@
 													{% show_menu 0 100 100 100 "jks/includes/language.html" %}
 												</ul>
 											</div> -->
-											
+
 										</div>
 									</div>
 								</div>
@@ -137,10 +137,10 @@
             {% block header %}{% endblock header %}
             {% block content %}{% endblock content %}
         </div>
-        
+
         <!-- Footer -->
         {% static_placeholder "footer" or %} @Copyright - JK Sikhs Team{% endstatic_placeholder %}
-		
+
 		<!-- Jquery JS -->
         <script src="{% static 'jks/js/jquery.min.js' %}"></script>
         <script src="{% static 'jks/js/jquery-migrate-3.0.0.js' %}"></script>
@@ -153,7 +153,7 @@
               "facebook", "pinterest", "reddit", "twitter", "whatsapp"
             ],
             text: "share with: ",
-            url: "https://www.jksikhs.com/{% page_url request.current_page %}"
+            url: "{{view.get_view_url}}"
           });
         </script>
 

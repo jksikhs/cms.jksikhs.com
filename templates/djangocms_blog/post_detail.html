@@ -37,6 +37,7 @@ https://djangocms-blog.readthedocs.io/en/latest/features/shares.html
     {% if view.liveblog_enabled %}
         {% include "liveblog/includes/post_detail.html" %}
     {% endif %}
+    <br><br>
     {% if post.related.exists %}
         <section class="post-detail-list">
         {% for related in post.related.all %}
@@ -44,5 +45,6 @@ https://djangocms-blog.readthedocs.io/en/latest/features/shares.html
         {% endfor %}
         </section>
     {% endif %}
+    <br>
 </article>
 {% endblock content_blog %}

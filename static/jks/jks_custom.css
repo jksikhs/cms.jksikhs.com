@@ -62,7 +62,7 @@
      /* start of medium tablet styles */
      /* Adding a fixed/percentage max-width could ensure that the image doesn't get too small */
      .img-responsive {
-       max-width: 50%!important;
+       max-width: 30%!important;
      }
      .breadcrumbs {
       padding: 15px;
@@ -77,7 +77,7 @@
      }
      /* It's possible to hide the image if the screen becomes too small */
     .img-responsive {
-       max-width: 15%!important;
+       max-width: 30%!important;
      }
      .breadcrumbs {
       padding: 15px;

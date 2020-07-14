@@ -38,6 +38,7 @@ INSTALLED_ADDONS = [
     'django-filer',
     'djangocms-maps',
     # </INSTALLED_ADDONS>
+    'aldryn-forms',
 ]
 
 # Now we will load auto-configured settings for addons. See:

@@ -10,6 +10,10 @@
 -Read the technology documentation \
 -Share your proposed changes with the project team for review \
 
+## Branches
+- Use feature branches for local development 
+- Merge into staging after a feature is done (staging points to the test env) 
+
 --------------------
 ## References for developers
 https://djangocms-blog.readthedocs.io/en/latest/ \

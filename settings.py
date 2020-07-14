@@ -21,7 +21,6 @@ INSTALLED_ADDONS = [
     'aldryn-sso',
     'aldryn-django-cms',
     'aldryn-django-rest-framework',
-    'aldryn-forms',
     'aldryn-haystack',
     'aldryn-sitemap',
     'djangocms-blog',
@@ -39,6 +38,7 @@ INSTALLED_ADDONS = [
     'django-filer',
     'djangocms-maps',
     # </INSTALLED_ADDONS>
+    'aldryn-forms',
 ]
 
 # Now we will load auto-configured settings for addons. See:

@@ -20,6 +20,15 @@
             </ul>
         {% endif %}
     </li>
-
-    
 {% endfor %}
+<li class="nav-item">
+  <form method="get" action="https://www.google.com/search">
+    <div style="padding:4px;" role="search" class="td-head-form-search-wrap">
+      <input id="td-header-search" type="text" name="q" size="25" style="color:#808080;"
+        maxlength="255" autocomplete="off" value="Search jksikhs.com"
+        onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+        <input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Go!" />
+        <input type="hidden" name="sitesearch" value="jksikhs.com" />
+      </div>
+    </form>
+</li>

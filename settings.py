@@ -37,8 +37,9 @@ INSTALLED_ADDONS = [
     'djangocms-video',
     'django-filer',
     'djangocms-maps',
-    # </INSTALLED_ADDONS>
     'aldryn-forms',
+    # </INSTALLED_ADDONS>
+
 ]
 
 # Now we will load auto-configured settings for addons. See:

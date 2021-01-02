@@ -37,7 +37,6 @@ INSTALLED_ADDONS = [
     'djangocms-video',
     'django-filer',
     'djangocms-maps',
-    'aldryn-forms',
     # </INSTALLED_ADDONS>
 
 ]
